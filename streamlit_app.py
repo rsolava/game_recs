@@ -157,7 +157,7 @@ if st.session_state.iter > 1:
     recs = recs[recs.NAME.apply(lambda x: x not in game_vals)]
 
     selections = game_df[game_df.NAME.apply(lambda x: x in game_vals)]
-    if(len(selections > 0)):
+    if(len(selections) > 0):
         recs = find_top_recs(recs,selections,5)
     else:
         recs.sort_values(by="GRATING", inplace = True, ascending = False)
