@@ -1,6 +1,7 @@
+.gitignore
 *.pdf
 *.csv
 chromedriver
 *.dup
 .ipynb_checkpoints
-data_collection.ipynb
+*.ipynb
